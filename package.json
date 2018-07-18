@@ -15,6 +15,7 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "heroku-prebuild": "npm run build"
   }
 }
