@@ -1,0 +1,20 @@
+{
+  "name": "hello-clova",
+  "version": "1.0.0",
+  "description": "LINE Clova の Hello World!",
+  "main": "lib/index.js",
+  "author": "chibi929",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@line/clova-cek-sdk-nodejs": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
