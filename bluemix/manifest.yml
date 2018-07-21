@@ -1,0 +1,7 @@
+applications:
+- path: .
+  name: clova-test
+  domain: mybluemix.net
+  random-route: false
+  instances: 1
+  memory: 256M

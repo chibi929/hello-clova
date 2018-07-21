@@ -1,0 +1,24 @@
+{
+  "name": "hello-clova-with-bluemix",
+  "version": "1.0.0",
+  "description": "Clova のサンプルを bluemix へデプロイ",
+  "main": "lib/index.js",
+  "author": "chibi929",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "8.x"
+  },
+  "dependencies": {
+    "@line/clova-cek-sdk-nodejs": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/index.js"
+  }
+}
