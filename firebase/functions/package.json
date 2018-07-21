@@ -1,0 +1,28 @@
+{
+  "name": "hello-clova-with-firebase",
+  "version": "1.0.0",
+  "description": "Clova のサンプルを firebase へデプロイ",
+  "main": "lib/index.js",
+  "author": "chibi929",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "8.x"
+  },
+  "dependencies": {
+    "@line/clova-cek-sdk-nodejs": "git+https://github.com/chibi929/clova-cek-sdk-nodejs#deploy",
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  }
+}
