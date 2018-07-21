@@ -1,11 +1,14 @@
 {
-  "name": "hello-clova",
+  "name": "hello-clova-with-heroku",
   "version": "1.0.0",
-  "description": "LINE Clova の Hello World!",
+  "description": "Clova のサンプルを heroku へデプロイ",
   "main": "lib/index.js",
   "author": "chibi929",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "8.x"
+  },
   "dependencies": {
     "@line/clova-cek-sdk-nodejs": "^1.0.1",
     "body-parser": "^1.18.3",
@@ -16,6 +19,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "heroku-prebuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   }
 }

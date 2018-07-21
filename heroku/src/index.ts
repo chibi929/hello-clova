@@ -15,7 +15,7 @@ const intentHandler = async responseHelper => {
   switch (intent) {
     case 'KinokoIntent':
       responseHelper.setSimpleSpeech(
-        SpeechBuilder.createSpeechText('きのこのこのこ元気の子')
+        SpeechBuilder.createSpeechText('きのこのこのこ元気の子 from Heroku')
       );
       break;
     case 'Clova.YesIntent':
