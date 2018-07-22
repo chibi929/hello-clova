@@ -1,6 +1,6 @@
 # hello-clova-with-lambda
 
-- Clova のサンプルを heroku へデプロイ
+- Clova のサンプルを lambda へデプロイ
 
 ## Prerequires
 
